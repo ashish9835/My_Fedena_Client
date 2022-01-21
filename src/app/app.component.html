@@ -1,0 +1,74 @@
+<ion-app>
+  <ion-menu contentId="content" menuId="content" side="start" type="overlay">
+    <ion-content>
+      <div class="admin1">
+        <img class="img1" src="assets/user.png" alt="" />
+        <p class="line1">{{ 'SIDE.admin' | translate:params}}</p>
+        <p class="line2">{{ 'SIDE.employe' | translate:params}} :</p>
+        <p class="lin3">{{ 'SIDE.system' | translate:params}}</p>
+      </div>
+      <div class="box2">
+        <img
+          class="img2"
+          src="assets/1.png"
+          alt=""
+          width="50px"
+          height="50px"
+        />
+        <h2 class="h2tag">{{ 'SIDE.collegeName' | translate:params}}</h2>
+      </div>
+      <div class="listbox">
+        <div style="padding-top: 10px">
+          <p class="homecontrol">{{ 'SIDE.home' | translate:params}}</p>
+          <ion-icon
+            style="position: relative; top: -34px; left: 8px; font-size: 20px"
+            name="home"
+          ></ion-icon>
+        </div>
+        <div>
+          <p class="homecontrol">{{ 'SIDE.announcement' | translate:params}}</p>
+          <ion-icon
+            style="position: relative; top: -34px; left: 8px; font-size: 20px"
+            name="trophy"
+          ></ion-icon>
+        </div>
+        <div>
+          <p class="homecontrol">{{ 'SIDE.events' | translate:params}}</p>
+          <ion-icon
+            style="position: relative; top: -34px; left: 8px; font-size: 20px"
+            name="calendar"
+          ></ion-icon>
+        </div>
+        <div>
+          <p class="homecontrol" (click)="presentAlertRadio()">{{ 'SIDE.switch_language' | translate:params}}</p>
+          <ion-icon
+            style="position: relative; top: -34px; left: 8px; font-size: 20px"
+            name="language-outline"
+          ></ion-icon>
+        </div>
+        <div>
+          <p class="homecontrol">{{ 'SIDE.notification' | translate:params}}</p>
+          <ion-icon
+            style="position: relative; top: -34px; left: 8px; font-size: 20px"
+            name="Notifications-outline"
+          ></ion-icon>
+        </div>
+        <div (click)="changePassword()">
+          <p class="homecontrol">{{ 'SIDE.password' | translate:params}}</p>
+          <ion-icon
+            style="position: relative; top: -34px; left: 8px; font-size: 20px"
+            name="key-outline"
+          ></ion-icon>
+        </div>
+        <div style="position: relative; top: 25%">
+          <p class="homecontrol">{{ 'SIDE.logout' | translate:params}}</p>
+          <ion-icon
+            style="position: relative; top: -34px; left: 8px; font-size: 20px"
+            name="log-out-outline"
+          ></ion-icon>
+        </div>
+      </div>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet Id="content"></ion-router-outlet>
+</ion-app>

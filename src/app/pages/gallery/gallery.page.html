@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ 'GALLERY.gallery' | translate:params}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-grid class="pad-16">
+    <ion-row>
+        <ion-col size="6" class="image-col" *ngFor="let album of show_albums; let i = index" (click)="clickedRow(album,i)">
+            <div class="image-container col-12">
+                <img [hidden]="album.isLoaded" src="{{album.last_image}}" onerror="this.src='assets/noimage.png'" alt="alternative"/>
+            </div>
+            <div class="text-container" [hidden]="album.isLoaded"  >
+                <h3 class="image-heading">{{album.name}}</h3>
+                <p>{{album.total_photos}} photos</p>
+            </div>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+<ion-infinite-scroll (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+</ion-infinite-scroll>
+</ion-content>

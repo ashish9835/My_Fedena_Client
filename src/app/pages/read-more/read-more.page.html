@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="topData">
+    <h2>{{title}}</h2>
+    <p>{{ date | date: 'MMM d, y, h:mm a'}}</p>
+  </div>
+
+  <div class="content">{{content}}</div>
+
+  <div class="textarea">
+    <div class="innerbox">
+      <ion-textarea placeholder="Please enter your comments.."></ion-textarea>
+    </div>
+  </div>
+
+  <div class="comments">
+   <p>Comments <span id="totalComments">{{totalComments}}</span></p>
+  </div>
+  
+  <ion-list>
+    <ion-item *ngFor="let item of comments">
+      <ion-label>{{item.author_name}}  {{item.content}} <span id="date"> {{item.created_at | date: 'd,MMM,y'}}</span></ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

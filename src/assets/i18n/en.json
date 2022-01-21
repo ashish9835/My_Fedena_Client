@@ -1,0 +1,52 @@
+{
+    "HOME": {
+        "title": "SIGN IN",
+        "collegeName": "Foradian Institute Of Technology Of Science",
+        "text": "Sign in with Username",
+        "login": "Log In",
+        "otp": "Sign in with OTP",
+        "trouble": "Trouble signing in? Contact your admin",
+        "change": "Change Password",
+        "cp": "Current Password",
+        "np": "New Password",
+        "cancel": "cancel"
+    },
+    "DASHBOARD": {
+        "dashboard": "DashBoard",
+        "attendance": "Attendance",
+        "gallery": "Gallery",
+        "announcement": "Announcements"
+    },
+    "ATTENDANCE": {
+        "attendance": "Attendance",
+        "notification": "Notification Status",
+        "course": "Course",
+        "batch": "Batch",
+        "subject": "Subject",
+        "make_attendance": "Make Attendance",
+        "view": "View Reports" 
+    },
+    "GALLERY": {
+        "gallery":"Gallery"
+    },
+    "SIDE": {
+        "admin": "Admin User",
+        "employe": "Employee",
+        "system": "System Admin",
+        "home": "Home",
+        "collegeName": "Foradian Institute Of Technology Of Science",
+        "announcement": "Announcements",
+        "events": "Events",
+        "switch_language": "Switch Language",
+        "notification": "Notification Setting",
+        "password": "Change Password",
+        "logout": "Log Out"
+    },
+    "RADIO": {
+        "header": "Select Language",
+        "english": "English",
+        "arabic": "Arabic",
+        "cancel": "Cancel",
+        "ok": "Ok"
+    }
+}

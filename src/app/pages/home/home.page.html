@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title> {{ 'HOME.title' | translate:params}}</ion-title>
+    <ion-icon size="large" slot="end" name="language-outline" (click)="presentAlertRadio()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-item id="box">
+    <div id="imageblock">
+      <img src="./assets/1.png" />
+    </div>
+    <p id="para1">{{ 'HOME.collegeName' | translate:params}}</p>
+  </ion-item>
+
+  <p id="para" style="font-weight: bold">{{ 'HOME.text' | translate:params}}</p>
+
+  <div class="form">
+    <ion-item class="userdata">
+      <ion-input placeholder="Username" [(ngModel)]="loginUserData.username"></ion-input>
+    </ion-item>
+    <ion-item class="userdata">
+      <ion-input placeholder="Password"  [(ngModel)]="loginUserData.password" type="password"></ion-input>
+    </ion-item>
+    <ion-button id="loginbtn" expand="block" (click)="loginUser()">{{ 'HOME.login' | translate:params}}</ion-button>
+  </div>
+  <div class="line-text">
+    <span class="lines"></span>
+    <span class="text">OR</span>
+  </div>
+  <p style="text-align: center; color: #c3362b; font-weight: bold;">{{ 'HOME.otp' | translate:params}}</p>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar id="footer">
+    <p style="color: white;">{{ 'HOME.trouble' | translate:params}}</p>
+  </ion-toolbar>
+</ion-footer>
+

@@ -1,0 +1,51 @@
+ion-toolbar{
+    --background: red;
+}
+ion-title{
+    --color:white;
+}
+.select{
+    display: block;
+    width: 90%;
+    border: 1px solid rgb(221, 218, 218);
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 19px;
+}
+.label{
+    display: block;
+    margin-top: 30px;
+}
+ion-label{
+    font-size: 20px;
+}
+ion-footer{
+    --background: white;
+}
+.buttons{
+    margin-top: 100px;
+    border-top: 1px solid grey;
+}
+.makeAttendance{
+    display: flex;
+    width: 70%;
+    border: 1px solid red;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 63px;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+.viewReports{
+    display: flex;
+    width: 70%;
+    border: 1px solid red;
+    background-color: red;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 63px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

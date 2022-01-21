@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="red">
+          <ion-back-button s style="color: antiquewhite;" ></ion-back-button>
+      </ion-button>
+  </ion-buttons>
+  <ion-title style="color: antiquewhite; font-weight: 500;">Album</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="gray-content">
+
+  <ion-grid class="image-items">
+      <ion-row>
+          <ion-col size="3" class="image-col" *ngFor="let image of all_images; let i = index">
+              <div (click)="openPhoto(i)">
+                  <img [src]="image.photo_url" onerror="this.src='assets/noimage.png'" alt="alternative"/>
+              </div>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+
+
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ 'ATTENDANCE.attendance' | translate:params}}</ion-title>
+    <ion-title slot="end">{{ 'ATTENDANCE.notification' | translate:params}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <div class="label">
+      <ion-label class="ion-padding">{{ 'ATTENDANCE.course' | translate:params}}</ion-label>
+    </div>
+    <div class="select">
+      <ion-select [interfaceOptions]=" course_listed" [(ngModel)]="course" (ionChange)="clickedcourse($event)" >
+        <ion-select-option *ngFor="let course of coursesData"  [value]="course.id" >{{course.courseName}}</ion-select-option>
+      </ion-select>
+    </div>
+
+    <div class="label">
+      <ion-label class="ion-padding">{{ 'ATTENDANCE.batch' | translate:params}}</ion-label>
+    </div>
+    <div class="select">
+      <ion-select [interfaceOptions]=" batches_listed" [(ngModel)]="batches" (ionChange)="clickedBatch($event)">
+        <ion-select-option *ngFor="let batch of batch_detail" [value]="batch.id">{{batch.name}}</ion-select-option>
+      </ion-select>
+    </div>
+
+    <div class="label">
+      <ion-label class="ion-padding">{{ 'ATTENDANCE.subject' | translate:params}}</ion-label>
+    </div>
+    <div class="select">
+      <ion-select [interfaceOptions]=" subjects_listed" [(ngModel)]="subjects" >
+        <ion-select-option *ngFor="let subject of subject_detail" [value]="subject.id">{{subject.name}}</ion-select-option>
+      </ion-select>
+    </div>
+  </ion-list>
+
+  <div class="buttons">
+    <div class="makeAttendance">{{ 'ATTENDANCE.make_attendance' | translate:params}}</div>
+    <div class="viewReports">{{ 'ATTENDANCE.view' | translate:params}}</div>
+  </div>
+</ion-content>
+
+

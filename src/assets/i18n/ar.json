@@ -1,0 +1,52 @@
+{
+    "HOME": {
+        "title": "لقب",
+        "collegeName": "معهد فوريديان للتكنولوجيا",
+        "text": "تسجيل الدخول باسم ",
+        "login": "تسجيل الدخول",
+        "otp": "تسجيل الدخول مع otp",
+        "trouble": "هل تواجه مشكلة في تسجيل الدخول؟ اتصل بالمسؤول الخاص بك",
+        "change": "تغيير كلمة المرور",
+        "cp": "كلمة المرور الحالية",
+        "np": "كلمة السر الجديدة",
+        "cancel": "إلغاء"
+    },
+    "DASHBOARD": {
+        "dashboard": "لوحة القيادة",
+        "attendance": "الحضور",
+        "gallery": "صالة عرض",
+        "announcement": "الإعلانات"
+    },
+    "ATTENDANCE": {
+        "attendance": "حضور",
+        "notification": "حالة الإخطار",
+        "course": "مسار",
+        "batch": "حزمة",
+        "subject": "المواضيع",
+        "make_attendance": "الحضور",
+        "view": "عرض التقارير" 
+    },
+    "GALLERY": {
+        "gallery": "صالة عرض"
+    },
+    "SIDE": {
+        "admin": "مستخدم إداري",
+        "employe": "موظف",
+        "system": "مسؤول النظام",
+        "home": "الصفحة الرئيسية",
+        "collegeName": "معهد فوريديان للتكنولوجيا",
+        "announcement": "الإعلانات",
+        "events": "الإعلانات",
+        "switch_language": "تبديل اللغة",
+        "notification": "إعداد الإخطار",
+        "password": "تغيير كلمة المرور",
+        "logout": "تسجيل خروج"
+    },
+    "RADIO": {
+        "header": "اختار اللغة",
+        "english": "English",
+        "arabic": "عربى",
+        "cancel": "إلغاء",
+        "ok": "موافق"
+    }
+}
